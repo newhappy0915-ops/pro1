@@ -1572,3 +1572,16 @@ a {
     .clean-ending { padding: 34px 18px; }
     .clean-website-section .clean-product-copy p { font-size: 14px; }
 }
+.feather-svg {
+  width: 50px;       /* 填入你想要的寬度 */
+  height: auto;        /* 讓高度依照比例自動縮放 */
+  display: inline-block; /* 方便與文字或其他元素並排 */
+  transform: translate(6px) rotate(15deg); 
+}
+
+/* 💡 單獨將第二個羽毛縮小 */
+.feather-svg.small-icon {
+  width: 20px;  /* 改成你想要的更小尺寸（例如 40px 或 24px） */
+    /* 💡 核心程式碼：正數代表向下移，可以自由調整數字（例如 4px、6px） */
+  transform: translateY(4px) rotate(15deg); 
+}
