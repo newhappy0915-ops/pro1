@@ -1,0 +1,1649 @@
+
+/* =========================
+   01 全站基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fffaf5;
+    color: #403a35;
+
+    font-family:
+        "Microsoft JhengHei",
+        "Noto Sans TC",
+        Arial,
+        sans-serif;
+
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   02 頂部導覽列
+========================= */
+
+.site-header {
+    background: #fff0f1;
+    border-bottom: 1px solid #f3dfe2;
+}
+
+.nav-container {
+    width: min(900px, 92%);
+    min-height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    color: #b97878;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.back-link {
+    color: #8e655c;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #c96f7b;
+}
+
+
+/* =========================
+   03 網頁主要寬度
+========================= */
+
+.portfolio-page {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+.page-heading {
+    padding: 25px 10px 35px;
+    text-align: center;
+}
+
+.page-heading h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #8e817b;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   04 九個區塊共用樣式
+========================= */
+
+.work-section {
+    margin-bottom: 25px;
+    padding: 30px;
+
+    border-radius: 24px;
+}
+
+.work-section h2 {
+    margin-bottom: 22px;
+    color: #5e514d;
+    font-size: 23px;
+}
+
+.content-card {
+    background: #ffffff;
+    padding: 28px;
+
+    border-radius: 18px;
+}
+
+.content-card h3 {
+    font-size: 18px;
+}
+
+.content-card p {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   05 各區塊背景色
+========================= */
+
+.original-section {
+    background: #f5f5f5;
+}
+
+.marketing-section {
+    background: #fff4de;
+}
+
+.title-section {
+    background: #fbe7e9;
+}
+
+.visual-section {
+    background: #eaf5ef;
+}
+
+
+/* =========================
+   05 場景圖
+========================= */
+
+/* 柔和奶油杏色背景 */
+.scene-section {
+    background: #f8ebdd;
+}
+
+/* 一張完整場景圖，等比例縮放、不裁切 */
+.scene-image {
+    max-width: 900px;
+}
+.detail-section {
+    background: #eaf3fc;
+}
+
+.specs-section {
+    background: #f4f0fa;
+}
+
+.website-section {
+    background: #fff4de;
+}
+
+.facebook-section {
+    background: #eaf3fc;
+}
+
+.threads-section {
+    background: #fbe7e9;
+}
+
+
+/* =========================
+   06 圖片共用設定
+========================= */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+/*
+所有圖片：
+1. 不超出容器
+2. 保留原始比例
+3. 不裁切
+*/
+
+.work-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   07 原圖
+   最大寬度 500px
+========================= */
+
+.original-image {
+    max-width: 500px;
+}
+
+.image-caption {
+    margin: 12px 0 0;
+
+    color: #8e817b;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* =========================
+   08 廣告行銷
+========================= */
+
+.marketing-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee8e2;
+}
+
+.marketing-item:first-child {
+    padding-top: 0;
+}
+
+.marketing-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.marketing-item h3 {
+    margin-bottom: 6px;
+
+    color: #b97878;
+    font-size: 16px;
+}
+
+.marketing-item p {
+    color: #625953;
+    font-size: 14px;
+}
+
+
+/* =========================
+   09 廣告標題
+========================= */
+
+.ad-title-card {
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.ad-title-card h3 {
+    margin-bottom: 10px;
+
+    color: #c96f7b;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.ad-title-card p {
+    color: #8e817b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   10 主視覺
+   最大寬度 900px
+========================= */
+
+.main-image {
+    max-width: 900px;
+}
+
+
+/* =========================
+   11 商品細節
+   一張四合一圖片
+   最大寬度 900px
+========================= */
+
+.detail-image {
+    max-width: 900px;
+}
+
+/*
+這裡不設定固定高度，
+也不使用 object-fit: cover。
+
+因此四合一圖片會完整顯示，
+不會裁切掉其中的商品特色。
+*/
+
+
+/* =========================
+   12 商品規格
+========================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #eee7f2;
+
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.specs-table th {
+    width: 35%;
+
+    color: #9473a3;
+    background: #faf6fd;
+    font-weight: bold;
+}
+
+.specs-table tr:last-child th,
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================
+   13 網站、FB、Threads 文案
+========================= */
+
+.copy-card {
+    overflow-wrap: anywhere;
+}
+
+.copy-card h3 {
+    margin-bottom: 18px;
+    color: #b97878;
+}
+
+.copy-card p {
+    margin-bottom: 16px;
+    white-space: pre-line;
+}
+
+.copy-cta {
+    color: #b97878;
+    font-weight: bold;
+}
+
+
+/* =========================
+   14 返回作品集按鈕
+========================= */
+
+.bottom-navigation {
+    padding: 15px 0 25px;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+
+    padding: 11px 28px;
+
+    background: #c96f7b;
+    color: #ffffff;
+
+    border-radius: 30px;
+    font-size: 14px;
+
+    transition: background 0.2s;
+}
+
+.back-button:hover {
+    background: #b45d69;
+}
+
+
+/* =========================
+   15 Footer
+========================= */
+
+.site-footer {
+    padding: 28px 15px;
+
+    background: #fff0f1;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 3px 0;
+
+    color: #8e655c;
+    font-size: 13px;
+}
+
+
+/* =========================
+   16 手機版 RWD
+========================= */
+
+@media (max-width: 650px) {
+
+    .nav-container {
+        min-height: 60px;
+    }
+
+    .brand,
+    .back-link {
+        font-size: 12px;
+    }
+
+    .portfolio-page {
+        width: 94%;
+        padding-top: 15px;
+    }
+
+    .page-heading {
+        padding: 20px 5px 25px;
+    }
+
+    .page-heading h1 {
+        font-size: 25px;
+    }
+
+    .work-section {
+        margin-bottom: 18px;
+        padding: 20px 14px;
+
+        border-radius: 18px;
+    }
+
+    .work-section h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .content-card {
+        padding: 20px 16px;
+    }
+
+    .image-container {
+        padding: 6px;
+    }
+
+    .ad-title-card {
+        padding: 28px 16px;
+    }
+
+    .ad-title-card h3 {
+        font-size: 22px;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .specs-table th {
+        width: 35%;
+    }
+
+    .copy-card p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   網站文案｜整體版面
+========================= */
+
+.product-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    color: #403a35;
+}
+
+.product-copy h3,
+.product-copy h4,
+.product-copy p {
+    margin-top: 0;
+}
+
+.product-copy p {
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.product-section-title {
+    margin-bottom: 22px;
+    color: #466653;
+    font-size: 22px;
+}
+
+
+/* =========================
+   商品介紹｜鼠尾草綠
+========================= */
+
+.product-intro {
+    padding: 35px;
+    background: #eaf3ea;
+    border-radius: 20px;
+}
+
+.product-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 5px 14px;
+
+    background: #ffffff;
+    color: #466653;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.product-intro h3 {
+    margin-bottom: 18px;
+
+    color: #466653;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.product-intro p {
+    margin-bottom: 0;
+    color: #52665a;
+}
+
+
+/* =========================
+   四大商品特色
+========================= */
+
+.product-features {
+    padding: 30px;
+
+    background: #fffaf5;
+    border-radius: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    padding: 25px;
+
+    background: #ffffff;
+    border: 1px solid #e9eee8;
+    border-radius: 18px;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 16px;
+
+    background: #eaf3ea;
+    color: #64856b;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.feature-card h4 {
+    margin-bottom: 12px;
+
+    color: #466653;
+    font-size: 17px;
+}
+
+.feature-card p {
+    margin-bottom: 12px;
+    color: #625953;
+}
+
+.feature-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   使用情境｜奶油杏色
+========================= */
+
+.product-scenarios {
+    padding: 30px;
+
+    background: #fff0e1;
+    border-radius: 20px;
+}
+
+.product-scenarios .product-section-title {
+    color: #805e45;
+}
+
+.scenario-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e9d9c9;
+}
+
+.scenario-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.scenario-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    background: #ffffff;
+    color: #ad8668;
+
+    border-radius: 12px;
+
+    font-size: 24px;
+}
+
+.scenario-item h4 {
+    margin-bottom: 4px;
+
+    color: #805e45;
+    font-size: 16px;
+}
+
+.scenario-item p {
+    margin-bottom: 0;
+    color: #625953;
+}
+
+
+/* =========================
+   商品規格｜白色資訊卡
+========================= */
+
+.product-info {
+    padding: 30px;
+
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.product-info-list {
+    margin: 0;
+}
+
+.product-info-list > div {
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr);
+    gap: 16px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eeeeea;
+}
+
+.product-info-list dt {
+    color: #466653;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-info-list dd {
+    margin: 0;
+
+    color: #625953;
+    font-size: 14px;
+}
+
+.product-note {
+    margin: 22px 0 0;
+    padding: 16px;
+
+    background: #f5f7f2;
+    border-radius: 12px;
+
+    color: #52665a;
+    font-size: 13px !important;
+}
+
+
+/* =========================
+   結尾文案｜柔和粉色
+========================= */
+
+.product-ending {
+    padding: 48px 28px;
+    background: #fbe8e8;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* 上方小標籤 */
+.ending-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 5px 15px;
+
+    background: #ffffff;
+    color: #a45f68;
+
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* 主標題 */
+.product-ending h3 {
+    margin: 0 0 22px;
+    color: #a45f68;
+
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* 主要說明 */
+.product-ending .ending-lead {
+    max-width: 520px;
+    margin: 0 auto 12px;
+
+    color: #665354;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* 補充說明 */
+.product-ending .ending-description {
+    max-width: 520px;
+    margin: 0 auto 28px;
+
+    color: #806d6d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* CTA 文案展示 */
+.ending-cta {
+    display: inline-block;
+    max-width: 100%;
+
+    padding: 12px 24px;
+
+    background: #b97878;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* 手機版 */
+@media (max-width: 650px) {
+
+    .product-ending {
+        padding: 32px 18px;
+    }
+
+    .product-ending h3 {
+        font-size: 23px;
+    }
+
+    .product-ending .ending-lead {
+        font-size: 15px;
+    }
+
+    .product-ending .ending-description {
+        font-size: 13px;
+    }
+
+    .ending-cta {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+}
+
+/* =========================
+   手機版 RWD
+========================= */
+
+@media (max-width: 650px) {
+
+    .product-copy {
+        gap: 16px;
+    }
+
+    .product-intro,
+    .product-features,
+    .product-scenarios,
+    .product-info,
+    .product-ending {
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .product-intro h3 {
+        font-size: 21px;
+    }
+
+    .product-section-title {
+        font-size: 20px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .product-info-list > div {
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .product-ending h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =====================================
+   08 網站文案｜香檳金色系
+===================================== */
+
+/* 主要文案區塊 */
+
+.website-section .copy-card {
+
+    --copy-gold: #A47B42;
+    --copy-light-gold: #B4935A;
+    --copy-border: #E8D9BD;
+    --copy-cream: #FFFCF7;
+    --copy-brown: #695A48;
+    --copy-dark-brown: #795B32;
+
+    box-sizing: border-box;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 36px;
+
+    background: var(--copy-cream);
+    border: 1px solid var(--copy-border);
+    border-radius: 16px;
+
+    color: var(--copy-brown);
+
+    font-family:
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        sans-serif;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    text-align: left;
+    white-space: normal;
+}
+
+
+/* 統一盒模型 */
+
+.website-section .copy-card *,
+.website-section .copy-card *::before,
+.website-section .copy-card *::after {
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   商品介紹
+===================================== */
+
+.website-section .copy-intro {
+
+    padding-bottom: 26px;
+}
+
+
+/* 商品標籤 */
+
+.website-section .copy-label {
+
+    margin: 0 0 18px;
+
+    color: var(--copy-gold);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* 商品主標題 */
+
+.website-section .copy-intro h3 {
+
+    margin: 0 0 20px;
+
+    color: var(--copy-dark-brown);
+
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* 商品介紹內文 */
+
+.website-section .copy-intro p:not(.copy-label) {
+
+    margin: 0 0 12px;
+
+    color: var(--copy-brown);
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================
+   商品特色與使用情境
+===================================== */
+
+/* 區塊分隔 */
+
+.website-section .copy-group {
+
+    padding: 25px 0;
+
+    border-top: 1px solid var(--copy-border);
+}
+
+
+/* 區塊標題 */
+
+.website-section .copy-heading {
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 0 20px;
+
+    color: var(--copy-gold);
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* 金色裝飾符號 */
+
+.website-section .copy-symbol {
+
+    color: var(--copy-light-gold);
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* 商品特色排列 */
+
+.website-section .copy-item {
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+.website-section .copy-item:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* 金色圖示 */
+
+.website-section .copy-icon {
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    color: var(--copy-light-gold);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+/* 文字區域 */
+
+.website-section .copy-text {
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* 商品特色小標題 */
+
+.website-section .copy-text h5 {
+
+    margin: 0 0 5px;
+
+    color: var(--copy-dark-brown);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+
+/* 商品特色內文 */
+
+.website-section .copy-text p {
+
+    margin: 0;
+
+    color: var(--copy-brown);
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================
+   商品結尾
+===================================== */
+
+.website-section .copy-ending {
+
+    padding-top: 26px;
+
+    border-top: 1px solid var(--copy-border);
+}
+
+
+/* 結尾標題 */
+
+.website-section .copy-ending h4 {
+
+    margin: 0 0 14px;
+
+    color: var(--copy-dark-brown);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+
+/* 結尾內文 */
+
+.website-section .copy-ending > p:not(.copy-cta) {
+
+    margin: 0 0 24px;
+
+    color: var(--copy-brown);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* 行動呼籲 */
+
+.website-section .copy-cta {
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 12px 20px;
+
+    background: var(--copy-gold);
+
+    color: #FFFFFF;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.7;
+}
+
+.website-section .copy-cta span {
+
+    margin-left: 6px;
+}
+
+
+/* =====================================
+   手機版排版
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    .website-section .copy-card {
+
+        padding: 22px 18px;
+
+        border-radius: 12px;
+    }
+
+    .website-section .copy-label {
+
+        font-size: 12px;
+    }
+
+    .website-section .copy-intro h3 {
+
+        font-size: 22px;
+    }
+
+    .website-section .copy-intro p:not(.copy-label) {
+
+        font-size: 14px;
+    }
+
+    .website-section .copy-group {
+
+        padding: 22px 0;
+    }
+
+    .website-section .copy-heading {
+
+        font-size: 18px;
+    }
+
+    .website-section .copy-item {
+
+        gap: 10px;
+    }
+
+    .website-section .copy-icon {
+
+        width: 24px;
+        height: 24px;
+
+        font-size: 18px;
+    }
+
+    .website-section .copy-text h5 {
+
+        font-size: 15px;
+    }
+
+    .website-section .copy-text p {
+
+        font-size: 14px;
+    }
+
+    .website-section .copy-ending h4 {
+
+        font-size: 19px;
+    }
+
+    .website-section .copy-ending > p:not(.copy-cta) {
+
+        font-size: 14px;
+    }
+
+    .website-section .copy-cta {
+
+        display: block;
+        width: 100%;
+
+        padding: 12px 14px;
+
+        font-size: 13px;
+        text-align: center;
+    }
+
+}
+
+/* 08 網站文案：修正原始換行造成的狹窄文字列與過大段落間距 */
+.website-section .copy-card p {
+    white-space: normal;
+}
+.website-section .copy-card .copy-text {
+    flex: 1 1 0;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+}
+.website-section .copy-card .copy-text h5 {
+    margin: 0 0 5px;
+}
+.website-section .copy-card .copy-text p {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+.website-section .copy-card .copy-item {
+    width: 100%;
+}
+
+
+/* 網站文案 SVG 圖示統一設定 */
+
+.website-section .copy-icon svg {
+
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+
+    stroke: #B4935A;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    display: block;
+    flex-shrink: 0;
+}
+
+/* =====================================
+   09 FB 文案｜自然貼文排版
+   僅影響 FB 區塊，不影響網站文案及 Threads
+===================================== */
+.facebook-section .facebook-copy-card {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 28px 30px;
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    color: #403a35;
+    text-align: left;
+}
+
+.facebook-section .facebook-copy-card h3 {
+    margin: 0 0 18px;
+    color: #403a35;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.facebook-section .facebook-copy-card p {
+    display: block;
+    margin: 0 0 18px;
+    padding: 0;
+    color: #403a35;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.facebook-section .facebook-copy-card strong {
+    color: inherit;
+    font-weight: 700;
+}
+
+.facebook-section .facebook-copy-card h4 {
+    margin: 22px 0 16px;
+    padding: 0;
+    color: #403a35;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.facebook-section .facebook-copy-card h4 + p,
+.facebook-section .facebook-copy-card h4 + p + p,
+.facebook-section .facebook-copy-card h4 + p + p + p,
+.facebook-section .facebook-copy-card h4 + p + p + p + p {
+    margin-bottom: 14px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.facebook-section .facebook-copy-card h4 + p + p + p + p + p {
+    margin-top: 22px;
+}
+
+.facebook-section .facebook-copy-card .copy-cta {
+    display: block;
+    width: auto;
+    margin: 20px 0 16px;
+    padding: 0;
+    color: #403a35;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.facebook-section .facebook-copy-card .copy-cta strong {
+    color: #403a35;
+    font-weight: 700;
+}
+
+.facebook-section .facebook-copy-card .copy-hashtags {
+    margin: 0;
+    padding: 0;
+    color: #403a35;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 650px) {
+    .facebook-section .facebook-copy-card { padding: 22px 18px; }
+    .facebook-section .facebook-copy-card h3 { font-size: 17px; }
+    .facebook-section .facebook-copy-card h4 { font-size: 16px; }
+    .facebook-section .facebook-copy-card p,
+    .facebook-section .facebook-copy-card .copy-cta { font-size: 14px; }
+    .facebook-section .facebook-copy-card .copy-hashtags { font-size: 13px; }
+}
+
+
+/* =====================================
+   10 Threads 文案｜自然貼文排版
+===================================== */
+
+/* Threads 白色貼文卡片 */
+.threads-section .threads-copy-card {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 28px 30px;
+
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+
+    color: #403a35;
+    text-align: left;
+}
+
+/* Threads 內文 */
+.threads-section .threads-copy-card p {
+    display: block;
+
+    margin: 0 0 18px;
+    padding: 0;
+
+    color: #403a35;
+    background: transparent;
+    border: none;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* 粗體重點 */
+.threads-section .threads-copy-card strong {
+    color: #403a35;
+    font-weight: 700;
+}
+
+/* 最後一段 Hashtag */
+.threads-section .threads-copy-card .threads-hashtags {
+    margin: 0;
+    padding: 0;
+
+    color: #403a35;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 手機版 */
+@media screen and (max-width: 650px) {
+
+    .threads-section .threads-copy-card {
+        padding: 22px 18px;
+    }
+
+    .threads-section .threads-copy-card p {
+        font-size: 14px;
+    }
+
+    .threads-section .threads-copy-card .threads-hashtags {
+        font-size: 13px;
+    }
+}
+
+/* ===== 三色雜糧饅頭官網文案：米色系，僅作用於 08 區塊 ===== */
+.food-website-section {background:#f2e7d5;}
+.food-website-section .food-landing {--cream:#fffaf2;--beige:#f4e7d5;--sand:#e8d2b5;--coffee:#69452e;--ink:#4d3c30;--muted:#806e5e;--line:#e8d8c2;display:grid;gap:22px;color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.85;overflow-wrap:break-word;}
+.food-website-section .food-landing *{box-sizing:border-box;}
+.food-website-section .food-landing p{white-space:normal;margin:0 0 12px;font-size:15px;line-height:1.85;}
+.food-website-section .food-hero,.food-website-section .food-panel,.food-website-section .food-finale{border-radius:22px;padding:34px;background:var(--cream);border:1px solid var(--line);}
+.food-website-section .food-hero{position:relative;background:linear-gradient(135deg,#fffdf8 0%,#f5e7d2 100%);padding:44px 38px;}
+.food-website-section .food-eyebrow,.food-website-section .food-kicker{font-size:12px!important;letter-spacing:.13em;font-weight:700;color:#a17b50;margin:0 0 12px!important;}
+.food-website-section .food-hero-icon{display:block;font-size:35px;color:#b88a52;margin-bottom:6px;}
+.food-website-section .food-hero h3{font-size:clamp(25px,4vw,35px);line-height:1.35;color:var(--coffee);margin:0 0 16px;font-weight:800;}
+.food-website-section .food-hero h3 span{display:block;font-size:clamp(18px,2.8vw,24px);margin-top:8px;font-weight:650;}
+.food-website-section .food-hero .food-lead{font-size:18px;font-weight:700;color:#91613b;margin-bottom:18px;}
+.food-website-section .food-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px;}
+.food-website-section .food-chips span{background:#fffdf9;border:1px solid #e1c9a8;color:#795638;border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.food-website-section .food-section-heading{display:flex;gap:13px;align-items:center;margin-bottom:22px;}
+.food-website-section .food-heading-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:13px;background:#f1e0c7;color:#8c623b;font-size:23px;}
+.food-website-section .food-section-heading .food-kicker{margin:0 0 2px!important;}
+.food-website-section .food-section-heading h4{font-size:clamp(19px,3vw,23px);color:var(--coffee);line-height:1.45;margin:0;}
+.food-website-section .food-flavor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;}
+.food-website-section .food-flavor{position:relative;padding:22px 17px;background:#fffdf8;border:1px solid var(--line);border-radius:17px;min-width:0;}
+.food-website-section .food-flavor.food-pumpkin{border-top:4px solid #d9a65c;}.food-website-section .food-flavor.food-original{border-top:4px solid #b49a70;}.food-website-section .food-flavor.food-purple{border-top:4px solid #a58b9d;}
+.food-website-section .food-number{display:inline-block;color:#a07d57;font-size:12px;font-weight:800;letter-spacing:.1em;}
+.food-website-section .food-flavor-icon{display:block;font-size:30px;margin:9px 0 5px;}
+.food-website-section .food-flavor h5,.food-website-section .food-benefit h5{font-size:17px;line-height:1.55;color:var(--coffee);margin:0 0 9px;}
+.food-website-section .food-flavor .food-ingredients{color:#9a693d;font-weight:700;font-size:13px;margin-bottom:14px;}
+.food-website-section .food-flavor p,.food-website-section .food-benefit p{font-size:14px;margin:0;}
+.food-website-section .food-moments{background:#f8efe1;}
+.food-website-section .food-moment{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #e6d5bf;align-items:flex-start;}
+.food-website-section .food-moment:last-child{border-bottom:0;padding-bottom:0;}
+.food-website-section .food-moment-icon{display:grid;place-items:center;flex:0 0 43px;height:43px;border-radius:50%;background:#fffaf2;color:#a37745;font-size:24px;}
+.food-website-section .food-moment h5{font-size:17px;color:var(--coffee);margin:0 0 6px;line-height:1.5;}
+.food-website-section .food-moment h5 span{display:block;font-size:14px;color:#967350;font-weight:600;margin-top:3px;}
+.food-website-section .food-moment p{margin:0;}
+.food-website-section .food-benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;}
+.food-website-section .food-benefit{background:#faf3e8;border:1px solid #ebddc9;border-radius:15px;padding:20px;}
+.food-website-section .food-benefit>span{display:block;color:#a67b4d;font-size:26px;line-height:1;margin-bottom:12px;}
+.food-website-section .food-finale{text-align:center;background:linear-gradient(145deg,#eee0cc,#e1c8a6);padding:42px 35px;}
+.food-website-section .food-finale-icon{font-size:35px;color:#94673e;}
+.food-website-section .food-finale h4{font-size:clamp(22px,3vw,28px);color:#624127;line-height:1.5;margin:6px 0 20px;}
+.food-website-section .food-finale p{max-width:640px;margin:0 auto 12px;}
+.food-website-section .food-finale .food-cta{display:block;max-width:620px;margin:25px auto 0;padding:15px 20px;border-radius:12px;background:#775034;color:white;font-size:15px;font-weight:700;}
+@media(max-width:700px){.food-website-section .food-flavor-grid{grid-template-columns:1fr;}.food-website-section .food-benefit-grid{grid-template-columns:1fr;}.food-website-section .food-hero,.food-website-section .food-panel,.food-website-section .food-finale{padding:24px 19px;border-radius:17px;}.food-website-section .food-landing{gap:15px;}.food-website-section .food-landing p{font-size:14px;}.food-website-section .food-hero .food-lead{font-size:16px;}.food-website-section .food-moment{gap:12px;}.food-website-section .food-moment-icon{flex-basis:36px;height:36px;font-size:20px;}.food-website-section .food-finale .food-cta{font-size:14px;}}
+
+/* ===== 09 FB 文案｜三色雜糧饅頭，米色自然貼文排版 ===== */
+.food-facebook-section { background: #f2e7d5; }
+.food-facebook-section .food-facebook-copy { background: #fffdf8; border: 1px solid #e8d8c2; border-radius: 18px; padding: 34px; color: #4d3c30; }
+.food-facebook-section .food-facebook-copy h3 { color: #69452e; font-size: 23px; line-height: 1.6; margin: 0 0 22px; }
+.food-facebook-section .food-facebook-copy p { color: #4d3c30; font-size: 15px; line-height: 1.9; margin: 0 0 18px; white-space: normal; }
+.food-facebook-section .food-facebook-copy strong { color: #795638; font-weight: 700; }
+.food-facebook-section .food-post-flavors { margin: 25px 0; padding: 22px 24px; border-left: 4px solid #c4a078; background: #f9f0e4; border-radius: 0 14px 14px 0; }
+.food-facebook-section .food-post-flavors p:nth-child(2n + 1) { margin-top: 18px; margin-bottom: 5px; }
+.food-facebook-section .food-post-flavors p:first-child { margin-top: 0; }
+.food-facebook-section .food-post-flavors p:nth-child(2n) { margin-bottom: 15px; }
+.food-facebook-section .food-post-flavors p:last-child { margin-bottom: 0; }
+.food-facebook-section .food-post-moments { padding: 18px 22px; margin: 22px 0; background: #f7f3eb; border: 1px solid #eadfcf; border-radius: 14px; }
+.food-facebook-section .food-post-moments p { margin-bottom: 10px; }
+.food-facebook-section .food-post-moments p:last-child { margin-bottom: 0; }
+.food-facebook-section .food-facebook-copy .food-post-cta { background: #775034; color: #fff; border-radius: 12px; padding: 15px 18px; margin: 23px 0; }
+.food-facebook-section .food-facebook-copy .food-post-cta strong { color: #fff; }
+.food-facebook-section .food-facebook-copy .copy-hashtags { color: #876745; font-size: 14px; margin-bottom: 0; overflow-wrap: anywhere; }
+@media (max-width: 650px) {
+  .food-facebook-section .food-facebook-copy { padding: 22px 18px; }
+  .food-facebook-section .food-facebook-copy h3 { font-size: 19px; }
+  .food-facebook-section .food-facebook-copy p { font-size: 14px; }
+  .food-facebook-section .food-post-flavors { padding: 16px 14px; }
+  .food-facebook-section .food-post-moments { padding: 15px 13px; }
+  .food-facebook-section .food-facebook-copy .copy-hashtags { font-size: 13px; }
+}
+
+/* ===== 10 Threads 文案｜三色雜糧饅頭・米色自然貼文 ===== */
+.food-threads-section { background: #f2e7d5; }
+.food-threads-section .food-threads-copy { background: #fffdf8; border: 1px solid #e8d8c2; border-radius: 18px; padding: 34px; color: #4d3c30; }
+.food-threads-section .food-threads-copy p { margin: 0 0 18px; padding: 0; background: transparent; color: #4d3c30; font-size: 15px; line-height: 1.9; white-space: normal; overflow-wrap: break-word; }
+.food-threads-section .food-threads-copy strong { color: #795638; font-weight: 700; }
+.food-threads-section .food-threads-flavors { margin: 23px 0; padding: 18px 23px; border-left: 4px solid #c4a078; background: #f9f0e4; border-radius: 0 14px 14px 0; }
+.food-threads-section .food-threads-flavor + .food-threads-flavor { margin-top: 20px; }
+.food-threads-section .food-threads-flavor p { margin-bottom: 6px; }
+.food-threads-section .food-threads-flavor p:last-child { margin-bottom: 0; }
+.food-threads-section .food-threads-moments { margin: 20px 0; padding: 16px 21px; background: #f7f3eb; border: 1px solid #eadfcf; border-radius: 14px; }
+.food-threads-section .food-threads-moments p { margin-bottom: 7px; }
+.food-threads-section .food-threads-moments p:last-child { margin-bottom: 0; }
+.food-threads-section .food-threads-copy .threads-hashtags { color: #876745; font-size: 14px; margin-bottom: 0; overflow-wrap: anywhere; }
+@media (max-width: 650px) {
+  .food-threads-section .food-threads-copy { padding: 22px 18px; }
+  .food-threads-section .food-threads-copy p { font-size: 14px; }
+  .food-threads-section .food-threads-flavors { padding: 15px 14px; }
+  .food-threads-section .food-threads-moments { padding: 14px; }
+  .food-threads-section .food-threads-copy .threads-hashtags { font-size: 13px; }
+}
+
+
+/* 09/10 社群貼文：仿平台一般貼文的自然段落，不使用口味色塊或 CTA 按鈕 */
+.food-facebook-section, .food-threads-section { background: #f2e7d5; }
+.food-facebook-section .social-post-copy,
+.food-threads-section .social-post-copy {
+  display:block; width:100%; max-width:none; margin:0; padding:30px 32px;
+  background:#fff; border:1px solid #e8e2d9; border-radius:14px;
+  color:#292929; text-align:left; box-shadow:none;
+}
+.food-facebook-section .social-post-copy p,
+.food-threads-section .social-post-copy p,
+.food-facebook-section .social-post-copy .food-post-cta,
+.food-threads-section .social-post-copy .food-post-cta {
+  display:block; margin:0 0 16px; padding:0; width:auto; max-width:none;
+  background:transparent; border:0; border-radius:0; box-shadow:none;
+  color:#292929; font-size:15px; font-weight:400; line-height:1.8;
+  text-align:left; white-space:normal; overflow-wrap:break-word;
+}
+.food-facebook-section .social-post-copy .post-opening {font-weight:700; font-size:16px;}
+.food-facebook-section .social-post-copy strong,
+.food-threads-section .social-post-copy strong,
+.food-facebook-section .social-post-copy .food-post-cta strong {color:inherit; font-weight:700;}
+.food-facebook-section .social-post-copy .post-hashtags,
+.food-threads-section .social-post-copy .post-hashtags {margin-bottom:0; font-size:14px; color:#292929;}
+@media (max-width:650px) {
+  .food-facebook-section .social-post-copy,
+  .food-threads-section .social-post-copy {padding:21px 17px;}
+  .food-facebook-section .social-post-copy p,
+  .food-threads-section .social-post-copy p {font-size:14px; margin-bottom:15px;}
+  .food-facebook-section .social-post-copy .post-opening {font-size:15px;}
+  .food-facebook-section .social-post-copy .post-hashtags,
+  .food-threads-section .social-post-copy .post-hashtags {font-size:13px; margin-bottom:0;}
+}
+/* 紫米 SVG 專用樣式 */
+.purple-rice-svg {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ===== 小花游標 ===== */
+
+html,
+body {
+    cursor: url("./images/smallflower.png") 16 16, auto;
+}
+
+a,
+button {
+    cursor: url("./images/smallflower.png") 16 16, pointer;
+}

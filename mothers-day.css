@@ -1,0 +1,90 @@
+:root { color-scheme: light; --ink:#684b56; --rose:#b95c78; --rose-dark:#96465f; --pink:#fff0f2; --cream:#fffaf5; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:linear-gradient(180deg,#f7e9f2 0%,#fffaf5 55%,#fff0e9 100%); color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif; line-height:1.9; }
+.page { width:min(100% - 36px,900px); margin:0 auto; padding:48px 0 70px; }
+.campaign { overflow:hidden; background:#fff; border:1px solid #f2dce3; border-radius:28px; box-shadow:0 14px 45px rgba(136,72,91,.08); }
+.campaign-header { padding:48px 32px 34px; text-align:center; background:radial-gradient(circle at top,#fff 0%,#fff0f4 80%); }
+.eyebrow { color:var(--rose); font-size:18px; font-weight:700; letter-spacing:.16em; }
+h1 { margin:14px auto 0; color:var(--rose-dark); font-size:clamp(25px,4.3vw,38px); line-height:1.55; letter-spacing:.035em; }
+.header-decoration { margin:14px 0 0; color:#d891a5; letter-spacing:.65em; }
+.poster { margin:0; padding:0 34px 14px; background:linear-gradient(#fff0f4,#fff); }
+.poster img { display:block; width:min(100%,650px); height:auto; margin:0 auto; border-radius:16px; box-shadow:0 8px 28px rgba(110,58,78,.1); }
+.campaign-body { width:min(100% - 70px,680px); margin:0 auto; padding:30px 0 54px; }
+.campaign-body p { margin:0 0 22px; font-size:16px; }
+blockquote { margin:30px 0; padding:23px 25px; background:#fff2f4; border-left:4px solid #d7839b; border-radius:0 14px 14px 0; color:var(--rose-dark); font-size:clamp(17px,2.8vw,21px); font-weight:700; line-height:1.85; }
+.greeting { margin:38px 0 32px; padding:29px 24px; border-radius:18px; background:#fff5eb; text-align:center; }
+.greeting h2 { margin:0 0 10px; color:var(--rose-dark); font-size:clamp(23px,3.5vw,29px); }
+.greeting p { margin:0; }
+.campaign-body .closing { font-weight:600; color:#8f5369; }
+.campaign-body .hashtags { margin:26px 0 0; padding-top:20px; border-top:1px solid #f1e3e6; color:#ad667d; font-size:14px; overflow-wrap:anywhere; }
+@media (max-width:600px) { .page { width:min(100% - 20px,900px); padding:16px 0 32px; } .campaign { border-radius:18px; } .campaign-header { padding:31px 17px 22px; } .eyebrow { font-size:10px; letter-spacing:.09em; } h1 { font-size:clamp(22px,6vw,29px); } .poster { padding:0 13px 10px; } .poster img { border-radius:10px; } .campaign-body { width:calc(100% - 38px); padding:20px 0 32px; } .campaign-body p { font-size:15px; margin-bottom:18px; } blockquote { margin:22px 0; padding:18px; font-size:17px; } .greeting { margin:26px 0; padding:22px 15px; } .campaign-body .hashtags { font-size:13px; } }
+
+/* ===== 小花游標 ===== */
+
+html,
+body {
+    cursor: url("./images/smallflower.png") 16 16, auto;
+}
+
+a,
+button {
+    cursor: url("./images/smallflower.png") 16 16, pointer;
+}
+
+   02 頂部導覽列
+========================= */
+
+.site-header {
+    background: #fff0f1;
+    border-bottom: 1px solid #f3dfe2;
+}
+
+.nav-container {
+    width: min(900px, 92%);
+    min-height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    color: #b97878;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.back-link {
+    color: #8e655c;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #c96f7b;
+}
+
+.portfolio-page {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+.page-heading {
+    padding: 25px 10px 35px;
+    text-align: center;
+}
+
+.page-heading h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #8e817b;
+    font-size: 14px;
+    margin-bottom: 0;
+}

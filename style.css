@@ -1,0 +1,1402 @@
+/* ==================================================
+   01. 全站基本設定
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#about,
+#marketing,
+#ecommerce {
+    scroll-margin-top: 110px;
+}
+
+#design {
+    scroll-margin-top: 130px;
+}
+
+:root {
+    /* 主色 */
+    --cream: #fffaf0;
+    --pink: #f8cfd3;
+    --pink-light: #fff0f1;
+    --pink-dark: #ed8f9b;
+
+    --green: #dff1df;
+    --green-light: #eef9ee;
+    --green-dark: #6ebc92;
+
+    --blue: #dff3fa;
+    --blue-light: #edf9fd;
+    --blue-dark: #50b8e3;
+
+    --yellow: #fff2c9;
+    --yellow-light: #fff9e7;
+    --yellow-dark: #efbc44;
+
+    --text: #403a35;
+    --text-light: #8d706a;
+    --white: #ffffff;
+
+    --shadow: 0 5px 16px rgba(90, 70, 65, 0.12);
+}
+
+body {
+    font-family:
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        sans-serif;
+
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* ==================================================
+   02. 上方導覽列
+================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 250, 240, 0.96);
+
+    box-shadow:
+        0 3px 12px rgba(80, 60, 60, 0.06);
+}
+
+.nav-container {
+    width: min(1180px, 94%);
+    min-height: 95px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* ==================================================
+   03. 左上品牌
+================================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--pink-light);
+
+    display: grid;
+    place-items: center;
+
+    font-size: 35px;
+}
+
+.brand h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.brand p {
+    font-size: 12px;
+}
+
+.brand span {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 11px;
+    color: #96736d;
+}
+
+
+
+/* ==================================================
+   04. 導覽選單
+================================================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.nav-item {
+    min-height: 50px;
+
+    padding: 11px 18px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 17px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-item:hover {
+    background: var(--pink);
+
+    transform: translateY(-2px);
+}
+
+.nav-icon {
+    font-size: 19px;
+}
+
+.arrow {
+    margin-left: 2px;
+
+    font-size: 17px;
+}
+
+
+
+/* ==================================================
+   05. 下拉式選單
+================================================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    top: 52px;
+    left: 0;
+
+    width: 165px;
+
+    padding: 9px;
+
+    background: #fff7f7;
+
+    border:
+        1px solid rgba(237, 143, 155, 0.18);
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 7px 20px rgba(90, 65, 65, 0.14);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition:
+        opacity 0.22s ease,
+        transform 0.22s ease,
+        visibility 0.22s;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 9px 12px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition:
+        background 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: var(--pink);
+
+    padding-left: 16px;
+}
+
+
+
+/* ==================================================
+   06. 右上聯絡我
+================================================== */
+
+.contact-button {
+    padding: 12px 22px;
+
+    flex-shrink: 0;
+
+    background: var(--pink-dark);
+
+    color: var(--white);
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    box-shadow:
+        0 4px 10px rgba(180, 100, 110, 0.13);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.contact-button:hover {
+    background: #e77f8d;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 17px rgba(180, 100, 110, 0.2);
+}
+
+
+
+/* ==================================================
+   07. 個人簡介 Hero
+================================================== */
+
+.hero {
+    width: min(1180px, 94%);
+
+    min-height: 410px;
+
+    margin: 40px auto 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.05fr 1.2fr 0.95fr;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: #fff6d9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+/* ==================================================
+   08. Hero 左側照片
+================================================== */
+
+.hero-photo-area {
+    position: relative;
+
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-circle {
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #ffd6d8;
+
+    background: var(--white);
+
+    box-shadow:
+        0 8px 22px rgba(160, 100, 100, 0.1);
+}
+
+.photo-circle img {
+    display: block;
+
+    width: 93%;
+    height: 93%;
+
+    object-fit: contain;
+
+    /* 照片水平置中 */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 照片往下移動 */
+    margin-top: 40px;
+}
+
+.hello-bubble {
+    position: absolute;
+
+    left: -5px;
+    top: 35px;
+
+    width: 115px;
+    height: 115px;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    border: 3px solid #f5aab0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    transform: rotate(-6deg);
+
+    box-shadow:
+        0 5px 13px rgba(150, 90, 90, 0.08);
+}
+
+.teacher-doodle {
+    position: absolute;
+
+    left: 0;
+    bottom: 5px;
+
+    font-size: 55px;
+}
+
+
+
+/* ==================================================
+   09. Hero 中間文字
+================================================== */
+
+.hero-intro h2 {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    font-size: 45px;
+
+    letter-spacing: 8px;
+
+}
+
+.hero-intro h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 2px;
+
+    width: 100%;
+    height: 13px;
+
+    background: #f7b7bd;
+
+    border-radius: 10px;
+
+    z-index: -1;
+}
+
+.hero-intro h3 {
+    margin-bottom: 20px;
+
+    font-size: 23px;
+}
+
+.pink-label {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    padding: 7px 17px;
+
+    background: var(--pink);
+
+    border-radius: 30px;
+
+    font-size: 15px;
+}
+
+.hero-intro p {
+    font-size: 15px;
+}
+
+
+
+/* ==================================================
+   10. Hero 右側技能
+================================================== */
+
+.hero-skills {
+    position: relative;
+}
+
+.hand-note {
+    margin-left: 45px;
+    margin-bottom: 25px;
+
+    color: #ac625e;
+
+    transform: rotate(-5deg);
+}
+
+.hero-skills ul {
+    list-style: none;
+}
+
+.hero-skills li {
+    margin: 12px 0;
+
+    font-size: 17px;
+}
+
+.rainbow {
+    position: absolute;
+
+    right: 0;
+    bottom: 10px;
+
+    font-size: 55px;
+}
+
+
+
+/* ==================================================
+   11. 共用內容區塊
+================================================== */
+
+.section {
+    width: min(1180px, 94%);
+
+    margin: 24px auto;
+
+    padding: 28px;
+
+    border-radius: 28px;
+}
+
+.section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+}
+
+.section-title-row h2 {
+    position: relative;
+
+    font-size: 34px;
+}
+
+.section-title-row h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 45px;
+    bottom: 2px;
+
+    width: 75%;
+    height: 11px;
+
+    background: #f2a8af;
+
+    border-radius: 20px;
+
+    z-index: -1;
+}
+
+.section-title-row p {
+    font-size: 15px;
+}
+
+
+
+/* ==================================================
+   12. 美編作品區
+================================================== */
+
+.design-section {
+    background:
+        linear-gradient(135deg,
+            #fff2ee,
+            #ffe6e4);
+}
+
+.work-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+
+/* ==================================================
+   13. 美編作品卡片
+================================================== */
+
+.work-card {
+    padding: 12px;
+
+    text-align: center;
+
+    border:
+        5px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    transform:
+        translateY(-7px) rotate(-1deg);
+
+    box-shadow:
+        0 10px 24px rgba(90, 70, 65, 0.16);
+}
+
+
+/* 作品縮圖 */
+
+.work-image {
+    width: 100%;
+    height: 190px;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: var(--white);
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+
+    /* 完整顯示作品縮圖，避免直式或橫式圖片被裁切 */
+    object-fit: contain;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.work-card:hover .work-image img {
+    /* 懸停時不放大圖片，避免邊緣被裁切 */
+    transform: none;
+}
+
+
+.work-card h3 {
+    margin-top: 5px;
+
+    font-size: 21px;
+}
+
+.work-card p {
+    margin: 5px 0 15px;
+
+    font-size: 13px;
+}
+
+
+
+/* 四種作品卡背景 */
+
+.pink-card {
+    background: #fff0f2;
+}
+
+.green-card {
+    background: #eaf8eb;
+}
+
+.blue-card {
+    background: #e8f7fc;
+}
+
+.yellow-card {
+    background: #fff6d9;
+}
+
+
+
+/* ==================================================
+   14. 作品按鈕
+================================================== */
+
+.work-button {
+    display: inline-block;
+
+    padding: 7px 18px;
+
+    border-radius: 25px;
+
+    color: var(--white);
+
+    font-size: 14px;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.work-card:hover .work-button {
+    transform: translateX(3px);
+}
+
+.pink-button {
+    background: #ec8d99;
+}
+
+.green-button {
+    background: #64bd8e;
+}
+
+.blue-button {
+    background: #42afe1;
+}
+
+.yellow-button {
+    background: #efbb45;
+
+    color: #503e28;
+}
+
+
+
+/* ==================================================
+   15. 行銷區
+================================================== */
+
+.marketing-section {
+    background:
+        linear-gradient(135deg,
+            #e8f7e7,
+            #dcf2e4);
+}
+
+.platform-layout {
+    display: grid;
+
+    grid-template-columns:
+        3fr 1fr;
+
+    gap: 25px;
+
+    align-items: center;
+}
+
+.platform-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+
+/* ==================================================
+   16. 行銷／電商平台卡片
+================================================== */
+
+.platform-card {
+    padding: 22px 10px;
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 18px rgba(80, 80, 70, 0.11);
+}
+
+.platform-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 8px;
+
+    border-radius: 14px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--white);
+
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.platform-card h3 {
+    font-size: 18px;
+}
+
+.platform-card p {
+    font-size: 12px;
+}
+
+
+
+/* 平台顏色 */
+
+.facebook {
+    background: #3586df;
+}
+
+.threads {
+    background: #171717;
+}
+
+.youtube {
+    background: #f03434;
+}
+
+.blogger {
+    background: #f58732;
+}
+
+.shopee {
+    background: #ef5e34;
+}
+
+
+
+/* ==================================================
+   17. 行銷右側小插圖
+================================================== */
+
+.marketing-doodle {
+    text-align: center;
+}
+
+.laptop {
+    width: 190px;
+    min-height: 125px;
+
+    margin: 0 auto;
+
+    padding: 22px;
+
+    background: #fffdf8;
+
+    border: 4px solid #554e44;
+
+    border-radius: 12px;
+
+    transform: rotate(4deg);
+
+    font-family: cursive;
+}
+
+.coffee {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    font-size: 55px;
+}
+
+
+
+/* ==================================================
+   18. 電商區
+================================================== */
+
+.ecommerce-section {
+    background:
+        linear-gradient(135deg,
+            #e7f7fb,
+            #d8f2fa);
+}
+
+.ecommerce-layout {
+    display: grid;
+
+    /* 兩個欄位以內容寬度排列，整組在電商區置中 */
+    grid-template-columns: 250px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+
+    width: 100%;
+    max-width: 250px;
+    justify-self: center;
+}
+
+.shopping-picture {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    justify-self: center;
+}
+
+.shopping-picture img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+     transform: translateY(-25px);
+}
+.shopping-picture p {
+    margin-top: -30px;
+
+    color: #8e655c;
+
+    font-size: 15px;
+
+    transform: rotate(-4deg);
+}
+
+
+
+/* ==================================================
+   19. Footer
+================================================== */
+
+.footer {
+    width: 100%;
+    min-height: 130px;
+
+    margin-top: 35px;
+
+    padding: 28px 7%;
+
+    background:
+        linear-gradient(135deg,
+            #fff0ef,
+            #ffdfe1);
+
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+
+/* ==================================================
+   20. Footer 左側版權
+================================================== */
+
+.footer-left {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-flower {
+    font-size: 32px;
+}
+
+.copyright {
+    color: #735b57;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.copyright-note {
+    margin-top: 2px;
+
+    color: #9b7772;
+
+    font-size: 12px;
+}
+
+
+
+/* ==================================================
+   21. Footer 聯絡我
+================================================== */
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 10px 22px;
+
+    background:
+        rgba(255, 255, 255, 0.78);
+
+    border: 2px solid #f3a6ae;
+
+    border-radius: 30px;
+
+    color: #9b5c62;
+
+    box-shadow:
+        0 4px 12px rgba(130, 80, 80, 0.08);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.footer-contact:hover {
+    background: #ef929e;
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(130, 80, 80, 0.15);
+}
+
+.mail-icon {
+    font-size: 23px;
+}
+
+.footer-contact span:last-child {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.25;
+}
+
+.footer-contact small {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.footer-contact strong {
+    font-size: 15px;
+}
+
+
+
+/* ==================================================
+   22. 返回頁首
+================================================== */
+
+.back-top {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #5d4d49;
+
+    transition: transform 0.25s ease;
+}
+
+.back-top:hover {
+    transform: translateY(-3px);
+}
+
+.back-text {
+    font-size: 14px;
+}
+
+.back-circle {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #ee929e;
+
+    color: var(--white);
+
+    display: grid;
+    place-items: center;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 4px 10px rgba(160, 90, 100, 0.15);
+}
+
+
+
+/* ==================================================
+   23. 平板版
+================================================== */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-wrap: wrap;
+
+        padding: 12px 0;
+    }
+
+    .nav-menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-photo-area {
+        min-height: 330px;
+    }
+
+    .hero-skills ul {
+        display: inline-block;
+
+        text-align: left;
+    }
+
+    .hand-note {
+        margin-left: 0;
+    }
+
+    .rainbow {
+        position: static;
+
+        margin-top: 10px;
+    }
+
+    .work-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .platform-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .ecommerce-layout {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        gap: 35px;
+    }
+
+    .shopping-picture img {
+        transform: none;
+    }
+
+    .shopping-picture p {
+        margin-top: 5px;
+    }
+
+    .marketing-doodle {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* ==================================================
+   24. 手機版
+================================================== */
+
+@media (max-width: 650px) {
+
+    .header {
+        position: relative;
+    }
+
+    .nav-container {
+        gap: 12px;
+    }
+
+    .brand p,
+    .brand span {
+        display: none;
+    }
+
+    .brand-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 27px;
+    }
+
+    .brand h1 {
+        font-size: 19px;
+    }
+
+    .contact-button {
+        padding: 8px 13px;
+
+        font-size: 13px;
+    }
+
+    .nav-item {
+        padding: 8px 10px;
+
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        width: 145px;
+    }
+
+    .hero {
+        margin-top: 20px;
+
+        gap: 15px;
+    }
+
+    .hero-photo-area {
+        min-height: 300px;
+    }
+
+    .photo-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hello-bubble {
+        width: 90px;
+        height: 90px;
+
+        left: 0;
+
+        font-size: 12px;
+    }
+
+    .teacher-doodle {
+        font-size: 42px;
+    }
+
+    .hero-intro h2 {
+        font-size: 36px;
+    }
+
+    .hero-intro h3 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 18px;
+
+        border-radius: 22px;
+    }
+
+    .section-title-row {
+        display: block;
+    }
+
+    .section-title-row h2 {
+        font-size: 28px;
+    }
+
+    .section-title-row p {
+        margin-top: 8px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-image {
+        height: 230px;
+    }
+
+    .platform-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+
+        padding: 28px 20px;
+
+        text-align: center;
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .footer-left {
+        justify-content: center;
+    }
+
+    .footer-contact {
+        min-width: 180px;
+
+        justify-content: center;
+    }
+
+}
+
+
+
+/* ==================================================
+   25. 超小手機
+================================================== */
+
+@media (max-width: 420px) {
+
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        gap: 2px;
+    }
+
+    .nav-item {
+        padding: 7px;
+
+        font-size: 13px;
+    }
+
+    .hero-intro h2 {
+        font-size: 31px;
+    }
+
+    .hero-intro h3 {
+        font-size: 16px;
+    }
+
+   
+    /* ===== 簡介三張裝飾圖：最終定位 ===== */
+
+#about {
+    position: relative;
+}
+
+    
+}
+#about {
+    position: relative;
+}
+
+#about .deco-flower {
+    position: absolute;
+    width: 90px;
+    left: 4px;
+    top: 60px;
+    transform: rotate(-15deg);
+}
+
+#about .deco-star {
+    position: absolute;
+    width: 90px;
+    right: 400px;
+    top: 80px;
+}
+
+#about .deco-rainbow {
+    position: absolute;
+    width: 160px;
+    right: 11px;
+    bottom: 2px;
+}
+
+
+
+/* ===== 小花游標 ===== */
+
+html,
+body {
+    cursor: url("./images/smallflower.png") 16 16, auto;
+}
+
+a,
+button {
+    cursor: url("./images/smallflower.png") 16 16, pointer;
+}
